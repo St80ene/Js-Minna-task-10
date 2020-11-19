@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(63, 76, 107, 0.226);
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.heading {
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.card {
+  margin: 2rem auto;
+  width: 18rem;
+  height: 27rem;
+  background: #ffffff;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.14221);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.flag {
+  width: 150px;
+}
+
+.loader {
+  border: 24px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 24px solid rgba(0, 0, 0, 0.356);
+  width: 200px;
+  height: 200px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 1000;
+  visibility: hidden;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  margin: auto;
+}
